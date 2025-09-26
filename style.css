@@ -1,0 +1,76 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;   /* ekranın tamamı */
+  height: 100vh;  /* ekranın tamamı */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+#kapsayici{
+    background-color: lightsalmon;
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(6,100px);
+}
+
+.kutu{
+    background-color: rgb(116, 106, 217);
+    width: 100px;
+    height: 100px;
+    border: thin solid black;
+}
+
+.kutu:nth-child(1){
+    grid-column: 2 / 3;  
+    grid-row: 3 / 4;     
+}
+.kutu:nth-child(2){
+    grid-column: 3 / 4;  
+    grid-row: 3 / 4;     
+}
+.kutu:nth-child(3){
+    grid-column: 4 / 5;  
+    grid-row: 3 / 4;     
+}
+.kutu:nth-child(4){
+    grid-column: 3 / 4;  
+    grid-row: 4 / 5;     
+}
+.sekil2{
+    background-color: rgb(85, 164, 82);
+    width: 100px;
+    height: 100px;
+    border: thin solid black;
+}
+.sekil2:nth-child(5){
+    grid-column: 2 / 3;  
+    grid-row: 4 / 5;     
+}
+.sekil2:nth-child(6){
+    grid-column: 4 / 5;  
+    grid-row: 4 / 5;     
+}
+.sekil2:nth-child(7){
+    grid-column: 4 / 5;  
+    grid-row: 5 / 6;     
+}
+.sekil2:nth-child(8){
+    grid-column: 3 / 4;  
+    grid-row: 5 / 6;     
+}
+.sekil2:nth-child(9){
+    grid-column: 2 / 3;  
+    grid-row: 5 / 6;     
+}
