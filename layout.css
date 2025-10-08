@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px auto 200px;
+
+
+}
+header{
+    grid-column: 2/12;
+    background-color: aquamarine;
+
+}
+main{
+    grid-column: 2/12;
+    background-color: rgb(41, 195, 143);
+
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav"
+    "sol sol sol sol sol sag sag sag sag sag"
+    "kutu1 kutu1 kutu1 kutu1 kutu2 kutu2 kutu2 kutu3 kutu3 kutu3"
+    "figure figure figure figure figure figure figure figure figure figure"
+    "buyuk buyuk buyuk buyuk buyuk buyuk buyuk kucuk kucuk kucuk"
+    "details details details details details details details details details details"
+    "summary summary summary summary summary summary summary summary summary summary"
+    ;
+    grid-template-rows: 400px 200px 150px 200px 150px 100px 100px;
+    gap: 10px;
+    
+}
+main > *{
+    border: thin solid black;
+}
+nav{
+    grid-area: nav;
+
+}
+article.sol{
+    grid-area: sol;
+}
+article.sag{
+    grid-area: sag;
+}
+.kutu1{
+    grid-area: kutu1;
+}
+.kutu2{
+    grid-area: kutu2;
+}
+.kutu3{
+    grid-area: kutu3;
+}
+figure{
+    grid-area: figure;
+}
+.buyuk{
+    grid-area: buyuk;
+}
+.kucuk{
+    grid-area: kucuk;
+}
+details{
+    grid-area: details;
+}
+summary{
+    grid-area: summary;
+}
+
+footer{
+    grid-column: 2/span 10;
+    background-color: rgb(171, 220, 203);
+    
+}
