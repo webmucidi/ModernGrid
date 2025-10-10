@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "header header ustKutu1 ustKutu2"
+    "kategori1 kategori2 kategori3 ."
+    "main main reklam1 reklam2"
+    "main main reklam3 ."
+    "footer footer footer altKutu"
+    ;
+}
+header{
+    grid-area: header;
+    background-color: #f44336;
+}
+section:nth-child(2){
+    grid-area: ustKutu1;
+    background-color: #e91e63;
+}
+section:nth-child(3){
+    grid-area: ustKutu2;
+    background-color: #b14f70;
+}
+section:nth-child(4){
+    grid-area: kategori1;
+    background-color: #3b3ba1;
+}
+section:nth-child(5){
+    grid-area: kategori2;
+    background-color: #2c2c9a;
+}
+section:nth-child(6){
+    grid-area: kategori3;
+    background-color: #8484cf;
+}
+main{
+    grid-area: main;
+    background-color: #4caf50;
+}
+.reklam1{
+    grid-area: reklam1;
+    background-color: #ff9800;
+}
+.reklam2{
+    grid-area: reklam2;
+    background-color: #fb8c00;
+}
+.reklam3{
+    grid-area: reklam3;
+    background-color: #ffa726;
+}
+footer{
+    grid-area: footer;
+    background-color: #607d8b;
+}
+aside{
+    grid-area: altKutu;
+    background-color: #455a64;
+}
