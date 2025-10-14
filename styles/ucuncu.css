@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3,1fr) 2fr; 
+  gap: 10px;
+
+  grid-template-areas: 
+    "solUst solUst solUst sagUst sagUst"
+    "anaAlan daire1 daire2 daire3 daire4"
+    "anaAlan  maviKutu maviKutu maviKutu yesilKutu"
+    "anaAlan  somonKutu somonKutu somonKutu yesilKutu";
+}
+div{
+    border-radius: 50%;
+}
+/* Alanların renkleri */
+header   { grid-area: solUst;   background: #da5353; }
+aside    { grid-area: sagUst;   background: lightgreen; }
+main     { grid-area: anaAlan;  background: lightcoral; }
+section  { grid-area: maviKutu;  background: lightblue; }
+.yuvarlak1 { grid-area: daire1; background: #a67c00; }
+.yuvarlak2 { grid-area: daire2; background: #a67c00; }
+.yuvarlak3 { grid-area: daire3; background: #a67c00; }
+.yuvarlak4 { grid-area: daire4; background: #a67c00; }
+nav      { grid-area: yesilKutu;  background: lightgray; }
+footer   { grid-area: somonKutu;   background: rgb(103, 176, 215); }
