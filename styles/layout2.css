@@ -27,6 +27,7 @@ nav{
 aside{
     grid-area: aside;
     background-color: rgb(195, 41, 143);
+    border-radius: 50%;
 
 }
 main{

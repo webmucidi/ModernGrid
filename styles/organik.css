@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: repeat(4,1fr); /* sabit yükseklik */
+  gap: 10px;
+
+  grid-template-areas: 
+    "solUst solUst solUst sagUst sagUst sagUst"
+    "solOrta tamOrta tamOrta sagUst sagUst sagUst"
+    "solOrta yuvarlak1 yuvarlak2 yuvarlak3 yuvarlak4 sagOrta"
+    "solOrta footer footer footer footer footer";
+}
+div{
+    border-radius: 50%;
+}
+/* Alanların renkleri */
+header   { grid-area: solUst;   background: #da5353; }
+aside    { grid-area: sagUst;   background: lightgreen; }
+main     { grid-area: solOrta;  background: lightcoral; }
+section  { grid-area: tamOrta;  background: lightblue; }
+.yuvarlak1 { grid-area: yuvarlak1; background: #a67c00; }
+.yuvarlak2 { grid-area: yuvarlak2; background: #a67c00; }
+.yuvarlak3 { grid-area: yuvarlak3; background: #a67c00; }
+.yuvarlak4 { grid-area: yuvarlak4; background: #a67c00; }
+nav      { grid-area: sagOrta;  background: lightgray; }
+footer   { grid-area: footer;   background: rgb(103, 176, 215); }
